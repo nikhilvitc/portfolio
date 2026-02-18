@@ -625,6 +625,18 @@
         gap: 2.5rem;
       }
 
+      .portfolio-card {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .portfolio-card:focus-visible {
+        outline: 2px solid var(--cyan);
+        outline-offset: 4px;
+        border-radius: 0.6rem;
+      }
+
       .portfolio-box {
         position: relative;
         border-radius: 0.6rem;
@@ -838,7 +850,7 @@
 
     <!-- Header -->
     <header class="header">
-      <a href="#home" class="logo">NK<span>.DEV</span></a>
+      <a href="#home" class="logo">/nikhil-singh<span>.dev</span></a>
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
@@ -1013,12 +1025,24 @@
       <div class="section-num">06</div>
       <h2 class="heading">Featured <span>Projects</span></h2>
       <div class="portfolio-container">
-        <div class="portfolio-box"><div class="portfolio-layer"><h4>File Cleansing & PII Masking</h4><p>Enterprise-grade AI-powered file processing. Multi-format (PDF, DOCX, PPTX) with OCR and object detection.</p></div></div>
-        <div class="portfolio-box"><div class="portfolio-layer"><h4>KrishiDeep / SIH Crop Advisor</h4><p>AI-based agricultural advisory. Crop recommendation with soil/location data, disease detection, multilingual.</p></div></div>
-        <div class="portfolio-box"><div class="portfolio-layer"><h4>VitaData – Healthcare Platform</h4><p>Full-scale healthcare management. Digital health records, vitals tracking, lab reports, secure auth.</p></div></div>
-        <div class="portfolio-box"><div class="portfolio-layer"><h4>Picture This – AI Image Gen</h4><p>AI-powered image generation with conversational interface. Firebase auth, real-time updates.</p></div></div>
-        <div class="portfolio-box"><div class="portfolio-layer"><h4>CabMate Finder</h4><p>Cab-pooling and travel partner matching. Smart matching by destination, date, time with advanced filters.</p></div></div>
-        <div class="portfolio-box"><div class="portfolio-layer"><h4>VHelp Game – Multiplayer</h4><p>Real-time multiplayer web app with live user tracking. WebSocket-based interactions.</p></div></div>
+        <a class="portfolio-card" href="https://github.com/nikhilvitc/File_Cleansing" target="_blank" rel="noopener">
+          <div class="portfolio-box"><div class="portfolio-layer"><h4>File Cleansing & PII Masking</h4><p>Enterprise-grade AI-powered file processing. Multi-format (PDF, DOCX, PPTX) with OCR and object detection.</p></div></div>
+        </a>
+        <a class="portfolio-card" href="https://github.com/nikhilvitc/krishideep_app" target="_blank" rel="noopener">
+          <div class="portfolio-box"><div class="portfolio-layer"><h4>KrishiDeep / SIH Crop Advisor</h4><p>AI-based agricultural advisory. Crop recommendation with soil/location data, disease detection, multilingual.</p></div></div>
+        </a>
+        <a class="portfolio-card" href="https://github.com/nikhilvitc/VitaData" target="_blank" rel="noopener">
+          <div class="portfolio-box"><div class="portfolio-layer"><h4>VitaData – Healthcare Platform</h4><p>Full-scale healthcare management. Digital health records, vitals tracking, lab reports, secure auth.</p></div></div>
+        </a>
+        <a class="portfolio-card" href="https://github.com/nikhilvitc/PICTHIS" target="_blank" rel="noopener">
+          <div class="portfolio-box"><div class="portfolio-layer"><h4>Picture This – AI Image Gen</h4><p>AI-powered image generation with conversational interface. Firebase auth, real-time updates.</p></div></div>
+        </a>
+        <a class="portfolio-card" href="https://cabpool.vhelpcc.com/" target="_blank" rel="noopener">
+          <div class="portfolio-box"><div class="portfolio-layer"><h4>CabMate Finder</h4><p>Cab-pooling and travel partner matching. Smart matching by destination, date, time with advanced filters.</p></div></div>
+        </a>
+        <a class="portfolio-card" href="https://vhelp-game.vercel.app/" target="_blank" rel="noopener">
+          <div class="portfolio-box"><div class="portfolio-layer"><h4>VHelp Game – Multiplayer</h4><p>Real-time multiplayer web app with live user tracking. WebSocket-based interactions.</p></div></div>
+        </a>
       </div>
     </section>
 
