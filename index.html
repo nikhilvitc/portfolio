@@ -628,51 +628,38 @@
       .portfolio-box {
         position: relative;
         border-radius: 0.6rem;
-        overflow: hidden;
-        border: 1px solid rgba(0,255,136,0.2);
-        background: linear-gradient(135deg, rgba(0,255,136,0.08), rgba(0,229,255,0.04));
-        min-height: 320px;
+        border: 1px solid rgba(0,255,136,0.12);
+        background: rgba(0,255,136,0.03);
+        padding: 2.6rem 2.8rem;
+        min-height: 260px;
         display: flex;
-        align-items: stretch;
-      }
-
-      .project-thumb {
-        flex: 0 0 40%;
-        display: grid;
-        place-items: center;
-        background:
-          repeating-linear-gradient(135deg, rgba(0,255,136,0.12) 0 12px, rgba(2,6,9,0.2) 12px 24px),
-          radial-gradient(circle at top left, rgba(0,229,255,0.25), transparent 55%);
-        border-right: 1px solid rgba(0,255,136,0.2);
-        position: relative;
+        transition: all 0.4s;
         overflow: hidden;
       }
 
-      .project-thumb::after {
+      .portfolio-box::before {
         content: '';
         position: absolute;
-        inset: 12px;
-        border: 1px dashed rgba(0,255,136,0.35);
-        border-radius: 0.4rem;
-        opacity: 0.8;
+        top: 0; left: 0;
+        width: 100%; height: 2px;
+        background: linear-gradient(90deg, transparent, var(--green), var(--cyan), transparent);
+        transform: translateX(-100%);
+        transition: transform 0.5s;
       }
 
-      .project-thumb span {
-        font-family: var(--font-orb);
-        font-size: 3.2rem;
-        color: var(--green);
-        letter-spacing: 0.2rem;
-        text-shadow: 0 0 20px rgba(0,255,136,0.6);
+      .portfolio-box:hover::before { transform: translateX(100%); }
+
+      .portfolio-box:hover {
+        border-color: rgba(0,255,136,0.35);
+        background: rgba(0,255,136,0.06);
+        transform: translateY(-6px);
+        box-shadow: 0 10px 40px rgba(0,255,136,0.12);
       }
 
       .portfolio-layer {
-        flex: 1;
         display: flex; flex-direction: column;
         justify-content: center;
-        padding: 2.5rem 3rem;
         text-align: left;
-        background: rgba(2,6,9,0.6);
-        backdrop-filter: blur(10px);
       }
 
       .portfolio-layer h4 {
@@ -1026,12 +1013,12 @@
       <div class="section-num">06</div>
       <h2 class="heading">Featured <span>Projects</span></h2>
       <div class="portfolio-container">
-        <div class="portfolio-box"><div class="project-thumb"><span>FC</span></div><div class="portfolio-layer"><h4>File Cleansing & PII Masking</h4><p>Enterprise-grade AI-powered file processing. Multi-format (PDF, DOCX, PPTX) with OCR and object detection.</p></div></div>
-        <div class="portfolio-box"><div class="project-thumb"><span>KD</span></div><div class="portfolio-layer"><h4>KrishiDeep / SIH Crop Advisor</h4><p>AI-based agricultural advisory. Crop recommendation with soil/location data, disease detection, multilingual.</p></div></div>
-        <div class="portfolio-box"><div class="project-thumb"><span>VD</span></div><div class="portfolio-layer"><h4>VitaData – Healthcare Platform</h4><p>Full-scale healthcare management. Digital health records, vitals tracking, lab reports, secure auth.</p></div></div>
-        <div class="portfolio-box"><div class="project-thumb"><span>PT</span></div><div class="portfolio-layer"><h4>Picture This – AI Image Gen</h4><p>AI-powered image generation with conversational interface. Firebase auth, real-time updates.</p></div></div>
-        <div class="portfolio-box"><div class="project-thumb"><span>CM</span></div><div class="portfolio-layer"><h4>CabMate Finder</h4><p>Cab-pooling and travel partner matching. Smart matching by destination, date, time with advanced filters.</p></div></div>
-        <div class="portfolio-box"><div class="project-thumb"><span>VG</span></div><div class="portfolio-layer"><h4>VHelp Game – Multiplayer</h4><p>Real-time multiplayer web app with live user tracking. WebSocket-based interactions.</p></div></div>
+        <div class="portfolio-box"><div class="portfolio-layer"><h4>File Cleansing & PII Masking</h4><p>Enterprise-grade AI-powered file processing. Multi-format (PDF, DOCX, PPTX) with OCR and object detection.</p></div></div>
+        <div class="portfolio-box"><div class="portfolio-layer"><h4>KrishiDeep / SIH Crop Advisor</h4><p>AI-based agricultural advisory. Crop recommendation with soil/location data, disease detection, multilingual.</p></div></div>
+        <div class="portfolio-box"><div class="portfolio-layer"><h4>VitaData – Healthcare Platform</h4><p>Full-scale healthcare management. Digital health records, vitals tracking, lab reports, secure auth.</p></div></div>
+        <div class="portfolio-box"><div class="portfolio-layer"><h4>Picture This – AI Image Gen</h4><p>AI-powered image generation with conversational interface. Firebase auth, real-time updates.</p></div></div>
+        <div class="portfolio-box"><div class="portfolio-layer"><h4>CabMate Finder</h4><p>Cab-pooling and travel partner matching. Smart matching by destination, date, time with advanced filters.</p></div></div>
+        <div class="portfolio-box"><div class="portfolio-layer"><h4>VHelp Game – Multiplayer</h4><p>Real-time multiplayer web app with live user tracking. WebSocket-based interactions.</p></div></div>
       </div>
     </section>
 
@@ -1070,7 +1057,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2025 Nikhil Kumar | All Rights Reserved</p>
+        <p>Copyright &copy; 2026 Nikhil Kumar | All Rights Reserved</p>
       </div>
       <div class="footer-iconTap">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
