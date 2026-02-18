@@ -1069,14 +1069,14 @@
       <h2 class="heading">Contact <span>Me</span></h2>
       <form action="https://formspree.io/f/mwvnqpzb" method="POST">
         <div class="input-box">
-          <input type="text" placeholder="// full_name" />
-          <input type="email" placeholder="// email_address" />
+          <input type="text" name="name" placeholder="// full_name" required />
+          <input type="email" name="email" placeholder="// email_address" required />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="// mobile_number" />
-          <input type="text" placeholder="// subject" />
+          <input type="tel" name="phone" placeholder="// mobile_number" />
+          <input type="text" name="subject" placeholder="// subject" />
         </div>
-        <textarea placeholder="// your_message here..."></textarea>
+        <textarea name="message" placeholder="// your_message here..." required></textarea>
         <input type="submit" value="./send_message.sh" class="btn" />
       </form>
     </section>
